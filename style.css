@@ -1,4 +1,37 @@
 
+h1 {
+  font-family: sans-serif;
+  text-align: center;
+  font-size: 50px;
+  margin-top: 10%;
+}
+
+h2 {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+
+}
+
 img {
-  width: 50px;
+  width: 60%;
+  margin: 50px;
+}
+
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 2s all ease;
+}
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
 }
